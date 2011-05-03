@@ -2,145 +2,123 @@
 	margin:0;
 	padding:0;
 }
+
+@font-face {
+    font-family: 'WhitehallRegular';
+    src: url('../fonts/whitehall-webfont.eot');
+    src: url('../fonts/whitehall-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/whitehall-webfont.ttf') format('truetype'),
+         url('../fonts/whitehall-webfont.svg#WhitehallRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MyriadPro';
+    src: url('../fonts/MyriadPro-Regular.eot');
+    src: url('../fonts/MyriadPro-Regular.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/MyriadPro-Regular.ttf') format('truetype'),
+    font-weight: normal;
+    font-style: normal;
+}
+
 body{
 	font-family:Arial;
-	padding-top:30px;
 	background-color:#000;
 }
 
 div#head{
 	position:fixed;
+	width: 100%;
+}
+
+div#logo{
+	font: MyriadPro, Arial, Helvetica, sans-serif;
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	text-shadow: 4px 2px 5px #666;
+	color:#FFF;
+}
+
+p#name{
+	font-size:48px;
+	
+}
+
+p#title{
+	font-size:18px;
+}
+
+nav#mainNav{
 	text-align:center;
+	width:80%;
+	padding-bottom:10px;
 	margin-left:10%;
 	margin-right:10%;
-	width:80%;
-	margin-top:20px;
 }
 
-div.logo{
-	text-align:center;
-	background-image:url(../images/logo.png);
+nav#mainNav li{
+	display: inline;
+	font: 18px/27px 'WhitehallRegular', Arial, sans-serif;
 }
 
-a.back{
-	background:transparent url(back.png) no-repeat 0px 0px;
-	position:absolute;
-	width:150px;
-	height:27px;
-	outline:none;
-	top:2px;
-	right: 0px;
-}
-
-.reference{
-	margin:20px auto;
-	width:600px;
-	padding:20px;
-}
-
-.reference p a{
-	text-transform:uppercase;
-	text-shadow:1px 1px 1px #fff;
-	color:#666;
+nav#mainNav li a{
+	color:#fff;
 	text-decoration:none;
+	text-shadow: 4px 2px 5px #FFF;
+	border: 2px solid #999;
+	border-radius: 6px;
+	padding: 5px 20px 5px 20px;
+	-webkit-transition: all 0.3s ease-in-out;
+	/* Animation with transition in Firefox (No supported Yet) */
+	-moz-transition: all 0.3s ease-in-out;
+	 /* Animation with transition in Opera (No supported Yet)*/
+	 -o-transition: all 0.3s ease-in-out;
+}
+
+nav#mainNav li a:hover{
+	text-shadow:2px 2px 8px #CCC;
+	background-color:#999;
+}
+
+nav#socialMedia{
+	color: #FFF;
+	position:fixed;
+	bottom: 5px;
+	right: 5px;
 	font-size:10px;
 }
 
-.reference p a:hover{
-	color:#333;
+nav#socialMedia li{
+	font: 18px/27px 'WhitehallRegular', Arial, sans-serif;
+	display: inline;
+	list-style-type:none;
+	padding-right:5px;
 }
 
-.menuWrapper{
-    font-family: "Trebuchet MS", Arial, sans-serif;;
-    font-size: 15px;
-    font-style: normal;
-    font-weight: normal;
-    text-transform:uppercase;
-    letter-spacing: normal;
-    line-height: 1.45em;
-    position:relative;
-    margin:20px auto;
-    height:100px;
-    width:797px;
-    background-position:0 0;
-    background-repeat:no-repeat;
-    background-color:transparent;
+nav#socialmedia li a{
+	border: 1px solid #FFF;
+	color:#FFF;
+	text-decoration:none;
+	text-align:center;
+	-webkit-transition: all 0.3s ease-in-out;
+	/* Animation with transition in Firefox (No supported Yet) */
+	-moz-transition: all 0.3s ease-in-out;
+	 /* Animation with transition in Opera (No supported Yet)*/
+	 -o-transition: all 0.3s ease-in-out;
 }
-ul.menu{
-    list-style:none;
-    width:797px;
+
+nav#socialmedia li span{
+	width: 32px;
+	height: 32px;
 }
-ul.menu > li{
-    float:left;
-    width:265px;
-    height:100px;
-    border-right:1px solid #777;
-    background-repeat:no-repeat;
-    background-color:transparent;
+
+.external{
+	target-new:tab;
 }
-ul.menu > li.last{
-    border:none;
-}
-.bg1{
-    background-image: url(../images/1.jpg);
-}
-.bg2{
-    background-image: url(../images/2.jpg);
-}
-.bg3{
-    background-image: url(../images/3.jpg);
-}
-ul.menu > li > a{
-    float:left;
-    width:265px;
-    height:50px;
-    margin-top:100px;
-    text-align:center;
-    line-height:50px;
-    color:#ddd;
-    background-color:#333;
-    letter-spacing:1px;
-    cursor:pointer;
-    text-decoration:none;
-    text-shadow:0px 0px 1px #fff;
-}
-ul.menu > li ul{
-    list-style:none;
-    float:left;
-    margin-top:-180px;
-    width:100%;
-    height:110px;
-    padding-top:20px;
-    background-repeat:no-repeat;
-    background-color:transparent;
-}
-ul.menu > li ul li{
-    display:none;
-}
-ul.menu > li ul.sub1{
-	top: 100px;
-    background-image:url(../images/bg1sub.png);
-	height: 100px;
-}
-ul.menu > li ul.sub2{
-    background-image:url(../images/bg2sub.png);
-	height: 100px;
-}
-ul.menu > li ul.sub3{
-    background-image:url(../images/bg3sub.png);
- 
-}
-ul.menu > li ul li a{
-    color:#fff;
-    text-decoration:none;
-    line-height:30px;
-    margin-left:20px;
-    text-shadow:1px 1px 1px #444;
-    font-size:11px;
-}
-ul.menu > li ul.sub1 li{
-    display:block;
-}
-ul.menu > li ul li a:hover{
-    border-bottom:1px dotted #fff;
+
+.badge:hover{
+	-webkit-transform:scale(1.2);
+	-moz-transform:scale(1.2);
 }
