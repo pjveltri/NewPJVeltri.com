@@ -1,0 +1,87 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+<HEAD>
+	<!-- TemplateBeginEditable name="pageTitle" -->
+   		<title>Title</title>
+   	<!-- TemplateEndEditable -->
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <meta name="description" content="Beautiful Background Image Navigation with jQuery" />
+        <meta name="keywords" content="jquery, background image, animate, menu, navigation, css3, cross-browser compatible"/>
+        <link rel="stylesheet" href="css/style.css" type="text/css" media="screen"/>
+        <style type="text/css" media="screen">
+			h1.fontface {font: 60px/68px 'WhitehallRegular', Arial, sans-serif;letter-spacing: 0;}
+			#mainNav {font: 18px/27px 'WhitehallRegular', Arial, sans-serif;}
+			<!--[if lte IE 6]>
+             	<link rel="stylesheet" href="css/styleIE6.css" type="text/css" media="screen"/>
+        	<![endif]-->
+		</style>
+</HEAD>
+
+<BODY>
+	 
+	 <div id="head">
+        	<div id="logo">
+           		<p id="name"> PJ Veltri </p>
+           	  <p id="title"> Freelance Design and Technical Services</p>
+   	   </div>
+        	<nav id="mainNav">
+            	<ul>
+                	<!-- TemplateBeginEditable name="navBarClass" -->
+       				  <li><a href="#">About</a></li>
+               		  <li><a class="current" href="#">Lighting</a></li>
+               		  <li><a href="#">Media</a></li>
+               		  <li><a href="#">Scenic</a></li>
+               		  <li><a href="#">Resume</a></li>
+               		  <li><a href="#">Photography</a></li>
+               		  <li><a href="#">Contact</a></li>
+                    <!-- TemplateEndEditable -->
+            	</ul>
+            </nav>
+</div>
+        <nav id="socialMedia">
+       	  <ul id="dashBoard">
+            	<li>
+                	<a class="external" href="http://www.facebook.com/pages/PJ-Veltri/146922768709354"> 
+                        <img class="badge" src="images/icons/fb.png" alt="Facebook" />
+                 	</a>
+                </li>
+                 <li>
+                	<a href="#">
+                        <img class="badge" src="images/icons/google.png" alt="Google" />
+                 	</a>
+        		</li>
+                <li>
+                	<a href="#">
+                    	<img class="badge" src="images/icons/picasa.png" alt="Picasa" />
+                    </a>
+              	</li>
+                <li>
+                	<a href="#">
+						<img class="badge" src="images/icons/skype.png" alt="Skype" />
+                  	</a>
+               	</li>
+                                 <li>
+                	<a href="#">
+                        <img class="badge" src="images/icons/twitter.png" alt="Twitter" />
+                 	</a>
+        		</li>
+                <li>
+                	<a href="#">
+                    	<img class="badge" src="images/icons/vimeo.png" alt="Vimeo" />
+                    </a>
+              	</li>
+                <li>
+                	<a href="#">
+						<img class="badge" src="images/icons/yt.png" alt="Youtube" />
+                  	</a>
+               	</li>
+          </ul>       
+        </nav>
+        <div id="mainEditable">
+		<!-- TemplateBeginEditable name="mainEditableRegion" -->
+        	mainEditableRegion
+		<!-- TemplateEndEditable -->
+        </div>
+        
+</BODY>
+</HTML>

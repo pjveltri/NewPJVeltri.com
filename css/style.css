@@ -3,6 +3,10 @@
 	padding:0;
 }
 
+p.indented{
+	text-indent: 40px;
+}
+
 @font-face {
     font-family: 'WhitehallRegular';
     src: url('../fonts/whitehall-webfont.eot');
@@ -30,6 +34,7 @@ body{
 div#head{
 	position:fixed;
 	width: 100%;
+	background-color:#000;
 }
 
 div#logo{
@@ -41,9 +46,37 @@ div#logo{
 	color:#FFF;
 }
 
+div#mainEditable{
+	position:absolute;
+	padding: 10px 10% 10px 10%;
+	width: 79%;
+	color:#FFF;
+	top: 150px;
+	left: 0.4%;
+	text-align:left;
+	z-index: -1;
+}
+
 p#name{
 	font-size:48px;
 	
+}
+
+span#headshot{
+	position: relative;
+	top: -140px;
+	padding: 0px;
+	float: right;
+	width: 20%;
+}
+
+span#bio{
+	position: relative;
+	top: 20px;
+	left: 0px;
+	width: 80%;
+	float: left;
+	padding-right: 20px;
 }
 
 p#title{
@@ -61,6 +94,7 @@ nav#mainNav{
 nav#mainNav li{
 	display: inline;
 	font: 18px/27px 'WhitehallRegular', Arial, sans-serif;
+	background-color:#000;
 }
 
 nav#mainNav li a{
@@ -82,12 +116,25 @@ nav#mainNav li a:hover{
 	background-color:#999;
 }
 
+nav#mainNav li a.current{
+	background-color:#555;
+}
+
+nav#mainNav li a.current:hover{
+	background-color:#555;
+	text-shadow: 4px 2px 5px #FFF;
+}
+							   
+
 nav#socialMedia{
 	color: #FFF;
 	position:fixed;
-	bottom: 5px;
+	bottom: 0px;
 	right: 5px;
 	font-size:10px;
+	background-color:#000;
+	padding-top: 5px;
+	padding-left: 5px;
 }
 
 nav#socialMedia li{
@@ -98,7 +145,7 @@ nav#socialMedia li{
 }
 
 nav#socialmedia li a{
-	border: 1px solid #FFF;
+	/* border: 1px solid #FFF; */
 	color:#FFF;
 	text-decoration:none;
 	text-align:center;
